@@ -1,6 +1,6 @@
 ## Ilzam Blog
 
-[![hugo version](https://github.com/ilzamafif/workflows/deploy badge.svg)](http://gohugo.io/)
+[![hugo version](https://github.com/ilzamafif/blogzam/.github/workflows/deploy%20hugo/badge.svg)](http://gohugo.io/)
 
 ini blogku sourcenya ada di brnch 'master' , lalu hasil deploy di branch 'gh-pages'
 teknologi yang aku gunakan adalah ['hugo'](https://gohugo.io).
@@ -13,8 +13,8 @@ Anda perlu meninstal Hugo untuk membangun dan menjaankan blog ini
 untuk membaca blog ini secara lokal anda perlu mengkloning repo ini:
 
 kemudian jalankan server hugo
->cd blogzam/
->hugo serve
+-cd blogzam/
+-hugo serve
 
 ##mulai bangun situs
 tersedia di http://localhost:1313
