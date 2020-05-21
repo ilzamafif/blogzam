@@ -4,12 +4,12 @@
 
             {{ $paginator := .Paginate (where .Site.Pages "Type" "post") 6 }}
             {{ range $paginator.Pages }}
-            <div class="col-md-4 mb-4 d-flex">
+            <div class="col-md-10 mb-4">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h3 class="card-title">
                             <a class="text-dark" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                        </h4>
+                        </h3>
                     </div>
                 </div>
 
