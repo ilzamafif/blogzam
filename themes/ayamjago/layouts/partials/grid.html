@@ -1,22 +1,21 @@
 <article class="card-post">
     <div class="container">
-        <div class="row">
+     <div class="row">
 
             {{ $paginator := .Paginate (where .Site.Pages "Type" "post") 6 }}
             {{ range $paginator.Pages }}
-            <div class="col-md-10 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            <a class="text-dark" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                        </h3>
-                    </div>
-                </div>
-
+            
+        
+           <div class="col mb-4">
+             <div class="list-group">
+              <h6 class="list-group-item list-group-item-action">
+                <a class="text-dark" href="{{ .RelPermalink }}">{{ .Title }}</a>
+               </h6>  
             </div>
+          </div>
+         
             {{ end }}
-
-        </div>
+         </div>
     </div>
 </article>
 
