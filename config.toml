@@ -2,6 +2,7 @@ baseURL = "http://blogzam.js.org/"
 languageCode = "en-us"
 title = "ayamjago"
 
+
 # Agar front-matter pakai format YAML
 MetaDataFormat = "yaml"
 
