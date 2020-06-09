@@ -1,27 +1,32 @@
-baseURL = "http://blogzam.js.org/"
-languageCode = "en-us"
-title = "ayamjago"
+baseurl = "https://blogzam.js.org/"
+title = "blogzam"
+theme = "zam"
 
-
-# Agar front-matter pakai format YAML
-MetaDataFormat = "yaml"
-
-# untuk apply temanya
-themesDir = "themes"
-theme = "ayamjago"
-
-# Shortname disqus, silahkan sesuaikan
+# disqus & googleAnalytics
 DisqusShortname = ""
+googleAnalytics = "" 
 
-# Untuk Google Analytic, silahkan sesuikan
-googleAnalytics = "UA-80517197-1" 
-
-# Untuk deskripsi tag meta di homepage
-description = ""
 
 # Biodata Author
 [author]
-    name = "Ilzam Afif"
-    homepage = "https://github.com/ilzamafif/"
-    bio = "praja muda karana"
-    image = ""
+#site author
+    name = "ilzam afif"
+    homepage = "https://twitter.com/ilzam27_"
+    bio = ""
+# Untuk deskripsi tag meta di homepag
+description = "Jangan Lupa Bahagia"
+
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+
+[menu]
+  [[menu.main]]
+    identifier = "github"
+    name = "Github"
+    url = "https://github.com/ilzamafif"
+    wight = 1
