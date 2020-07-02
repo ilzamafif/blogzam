@@ -2,7 +2,7 @@
 title: "Think About It"
 slug: think-about-it
 date: 2020-06-21T10:31:13Z
-draft: true
+draft: false
 
 type: post
 
