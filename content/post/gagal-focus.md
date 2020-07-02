@@ -1,5 +1,5 @@
 ---
-title: "sad"
+title: "gagal fucu"
 date: 2020-05-29T06:42:36Z
 draft: false
 ---
@@ -12,6 +12,7 @@ ya bisa jadi karna membuatku senang
 yah namanya lihat orang cantik gmana lagi??
 hari itu menurutku hari yang indah sih pertama melihat dia,
 ngga tau namanya ya mau minta ***** malah banyak orang ya sudah pasrah aja lihat senyumnya aja bahagia palagi memilikinya
+
 eaaaa bucin
 
 pertama kali sih melihat dia akupun ngerasa ada yg beda, mungkin dia?
