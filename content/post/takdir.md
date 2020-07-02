@@ -2,7 +2,7 @@
 title: "Takdir"
 slug: takdir
 date: 2020-07-02T02:07:37Z
-draft: true
+draft: false
 
 type: post
 
