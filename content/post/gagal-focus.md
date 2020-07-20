@@ -1,7 +1,7 @@
 ---
 title: "gagal fucus"
 date: 2020-05-29T06:42:36Z
-draft: false
+draft: true
 ---
 
 Dia.
