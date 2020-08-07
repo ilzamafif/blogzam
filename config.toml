@@ -1,6 +1,6 @@
 baseurl = "https://blogzam.js.org/"
 title = "blogzam"
-theme = "zam"
+theme = "self"
 
 # disqus & googleAnalytics
 DisqusShortname = ""
@@ -14,7 +14,9 @@ googleAnalytics = ""
     homepage = "https://twitter.com/ilzam27_"
     bio = ""
 # Untuk deskripsi tag meta di homepag
-description = "Jangan Lupa Bahagia"
+description = "blogzam merupakan tempat belajar pemogramman berbahasa indonesia yang memiliki beberapa fitur yaitu course online, diskusi online, dan ujian online."
+
+keyword = "pemogramman web, belajar membuat website, web programming, pemogramman, membangun website, belajar ngoding, koding, tutorial bahasa indonesia"
 
 
 [frontmatter]
