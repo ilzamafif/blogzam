@@ -10,8 +10,11 @@ pada materi kali ini kita akan mebahas HTML mulai dari definisi konsep sejarah s
 ---
 
 ##### pengertian HTML 
-HTML singkatan dari hypertext markup language, merupakan bahasa markup untuk halaman web berfungsi untuk memberi tahu browser cara menampilkan kontent.
-
+HTML singkatan dari hypertext markup language, merupakan bahasa standar markup untuk membuat halaman halaman web.elemen HTML berfungsi untuk memberi tahu browser cara menampilkan kontent.
+element html yaitu di tentukna oleh tag awal konten dan tag akhir
+```html
+<tag awal>kontent</tag akhir>
+```
 ---
 
 ##### sejarah HTML
@@ -50,22 +53,39 @@ www.evaluationoftheweb.com
 </html>
 ```
 
-`<!DOCTYPE html>` di gunakan untuk mendeklarasikan bahwa dokument merupakaan HTML5
-`<html>` di gunakan untuk
-`<head>` di gunakan untuk
-`<body>` di gunakan untuk
-`<title>` di gunakan untuk memberi judul
+* `<!DOCTYPE html>` di gunakan untuk mendeklarasikan bahwa dokument merupakaan HTML5
+* `<html>` merupakan elemn akar HTML
+* `<head>` di gunakan untuk berisi informasi tentang halaman web
+* `<body>` sebagai temepat kontent yang akan di tampilkan seperti gamabr dll.
+* `<title>` element yang menentukan judul pada halaman web (tersedia di bar atas browser)
 
 --- 
 
 untuk membuat website kita juga perlu alat .tools yang di gunakan code editor dan web browser
-code editor yaitu tools untuk menulis kode.
-web browser
+1.code editor yaitu jenis program kompirer(sistem oprasi) untuk menulis kode
+2.web browser sering disebut browser yaitu aplikasi perangkat lunak untuk menampilkan kontent
 
 --- 
 
-##### TAG
+pelajari HTML
+1.buka code editor contoh [Visual Studio Code](https://code.visualstudio.com)
+2.tulis beberapa HTML atau salin kode berikut
+```html 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello world!</title>
+  </head>
+  <body>
+    <h1>hello world!</h1>
+  </body>
+</html>
+```
+3.simpan file
+4.buka di browser
 
+
+##### TAG
 pada kesepatan kali kita akan membahas tag html mulai dari cara menbuat strukturnya dan tag tag apa saja yang terdapat pada html
 
 tag adalah kode dalam html bagaimana kita menuliskan `<nama tag>` tag ada yang berpasangan dan tidak.
@@ -76,27 +96,29 @@ biasanya tag berpasangan memiliki tag pembuka dan penutup
 ```
 yag penutup ada garis miring di depan nama tagnya
 
-tag apasaja yag yang ada di dalm head dan ada tag uang berada di dalam body
+tag apa saja yag yang ada di dalam head dan ada tag yang berada di dalam body
 
 kita bahas dulu yang berada di tag head 
-`<title></title>` sebagai judul halaman 
-`<link>` untuk minginpor css
-`<script`
-`<meta>` untuk mendeskripsikan websete kita 
+* `<title></title>` sebagai judul halaman 
+* `<link>` untuk menghubungkan file css
+* `<script` untuk menghubungkan file javascript
+* `<meta>` untuk mendeskripsikan websete kita 
 
 tag yang ada dilama body
-teks
-pendukung text
-gambar 
-hyperlink
-list
-table 
-form 
-script
-objeck 
-gruping
-
-komentar biasakan menggunakan komentar karena setiap bahasa memiliki komentar masing"
+* `<p>` tag paragraf
+* `<br>` unuk mengganti baris
+* `<hr>` menambah garis horizontal di bawahnya
+* `<img>` mengubungkan gambar
+* `<a>` menghubungkan link
+* `list` membuat list
+* `<table>` membuat table
+* `<form>` membuat formulir
+* `<script>` menghubungkan fule javascript`
+* `<div>` 
+* `<span>`
+* `<strong>` sebai penekanan tebal
+* `<em>` sebagai penekanan miring
+* `<!-- -->` sebagai komentar
 
 
 struktur tag
@@ -104,19 +126,19 @@ struktur tag
 <namatag artibut= "value">
 ```
 contoh : 
-```php
+```html
 <body id"body">
 ```
 sebuah tag boleh memiliki lebih dari satu atribut
+apa itu atribut?
 atribut global
-accsekey
-class 
-id 
-dir
-lang 
-style
-tab index
-title
+<namatag accsekey="">
+<naamtag class="">
+<namatag id="">
+<namatag dir="">
+<namatag lang="">
+<namatag style"">
+<namatag title="">
 
 cara pembuatan
 tag apa saja yang di dalam tag head dan body?
@@ -130,22 +152,46 @@ atribut global
 ---
 
 
-tag paragraf 
-`<p></p>`
-`br`
-`hr`
-`b`
-`i`
-`u`
-`strong`
-`em`
+##### tag paragraf 
+ tag paragraf di tentukan denagan tag `<p>`
+```html
+<p>ini adalah paragraf</p>
+```
+##### tag br
+tag br di tentukan dengan tag`br`
+```html
+<p>ini paragraf</p>
+<br>
+<p>ini juga paragraf</p>
+```
+##### tag hr
+tag br di tentukan dengan tag`hr`
+```html
+<p>ini paragraf</p>
+<hr>
+<p>ini juga paragraf</p>
+``` 
+##### tag b i u
+`b` untuk menjadkan teks tebal
+`i` untuk menjadikan teks inline
+`u` untuk menjadikan teks garis bawah
+`strong` sebagai penenkana garis tebal
+`em` sebagai penekanan garis miring
 
 
 ---
 
 
-##### heading
-`h1`
+##### heading 
+di tentukan dengan tag `h1` sampi `h6`
+```html
+<h1>ini adalah heading 1</h1>
+<h2>ini adalah heading 2</h2>
+<h3>ini adalah heading 3</h3>
+<h4>ini adalah heading 4</h4>
+<h5>ini adalah heading 5</h5>
+<h6>ini adalah heading 6</h6>
+```
 
 ---
 
@@ -160,8 +206,10 @@ unorderlist
 
 
 ##### link 
-link yaiyu ...
-dibuat menggunkan a
+link di tentukan denagn tag `<a>`
+```html
+<a href="https://blogzam.js.org">ini adalah link</a>
+```
 internal & ekstrenal link
 relative link
 page anchor
@@ -172,6 +220,12 @@ atribut
 
 
 gambar
+gamabar di tantukan denagn tag `<img>`
+```html
+<img src="blogzam.jpg" alt="blogzam">
+```
+file sumber (src) 
+teks alternatif (alt)
 internal resource
 eksternal resource
 atribut
@@ -194,6 +248,7 @@ atribut
 form
 apa itu form
 struktur
+
 
 
 
