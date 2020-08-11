@@ -4,7 +4,7 @@ theme = "self"
 
 # disqus & googleAnalytics
 DisqusShortname = ""
-googleAnalytics = "" 
+googleAnalytics = "UA-175167654-1"
 
 
 # Biodata Author

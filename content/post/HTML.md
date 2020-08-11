@@ -5,6 +5,7 @@ draft: false
 ---
 
 ### HTML
+#### Belajar HTML : Pengenalan HTML Dasar
 pada materi kali ini kita akan mebahas HTML mulai dari definisi konsep sejarah samapai kita akan membuat web sederhana menggunakankon HTML
 
 ---
@@ -60,15 +61,21 @@ www.evaluationoftheweb.com
 * `<title>` element yang menentukan judul pada halaman web (tersedia di bar atas browser)
 
 --- 
-
+####  peralatan untuk belajar html
 untuk membuat website kita juga perlu alat .tools yang di gunakan code editor dan web browser
-1.code editor yaitu jenis program kompirer(sistem oprasi) untuk menulis kode
-2.web browser sering disebut browser yaitu aplikasi perangkat lunak untuk menampilkan kontent
+##### 1.code editor
+code editor yaitu jenis program kompirer(sistem oprasi) untuk menulis kode
+
+##### 2.web browser 
+web browser sering disebut browser yaitu aplikasi perangkat lunak untuk menampilkan kontent ke browser
 
 --- 
-
-pelajari HTML
-1.buka code editor contoh [Visual Studio Code](https://code.visualstudio.com)
+membuat dokument pertama HTML
+1.buka code editor
+contoh 
+[Visual Studio Code](https://code.visualstudio.com),
+[subileme text](www.sublimetext.com)
+atau yang lainya
 2.tulis beberapa HTML atau salin kode berikut
 ```html 
 <!DOCTYPE html>
@@ -82,10 +89,14 @@ pelajari HTML
 </html>
 ```
 3.simpan file
+
 4.buka di browser
 
+---
+---
 
-##### TAG
+#### Tag, Atribut, &  Element
+##### Tag
 pada kesepatan kali kita akan membahas tag html mulai dari cara menbuat strukturnya dan tag tag apa saja yang terdapat pada html
 
 tag adalah kode dalam html bagaimana kita menuliskan `<nama tag>` tag ada yang berpasangan dan tidak.
@@ -130,7 +141,8 @@ contoh :
 <body id"body">
 ```
 sebuah tag boleh memiliki lebih dari satu atribut
-apa itu atribut?
+
+##### apa itu atribut?
 atribut global
 <namatag accsekey="">
 <naamtag class="">
@@ -178,11 +190,15 @@ tag br di tentukan dengan tag`hr`
 `strong` sebagai penenkana garis tebal
 `em` sebagai penekanan garis miring
 
-
+##### tag div 
+`<div> sebagai pemmbungkus`
+##### tag pre 
+`<pre>` membuat paragraf dengan format yang todak di tentukan
 ---
 
 
 ##### heading 
+heading yaitu sebuah judul yang biasaya ada pada sebuah halaman
 di tentukan dengan tag `h1` sampi `h6`
 ```html
 <h1>ini adalah heading 1</h1>
@@ -206,6 +222,7 @@ unorderlist
 
 
 ##### link 
+link pada html yaitu element yang berfungsi menghubungkan halaman satu ke halaman lainya
 link di tentukan denagn tag `<a>`
 ```html
 <a href="https://blogzam.js.org">ini adalah link</a>
