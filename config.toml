@@ -1,34 +1,24 @@
-baseurl = "https://blogzam.js.org/"
+baseURL = "https://blogzam.js.org/"
+languageCode = "en-us"
 title = "blogzam"
 theme = "yinyang"
+DefaultContentLanguage = "cn"
 
-# disqus & googleAnalytics
-DisqusShortname = ""
-googleAnalytics = "UA-175167654-1"
-
-
-# Biodata Author
 [author]
-#site author
-    name = "ilzam afif"
-    homepage = "https://twitter.com/ilzam27_"
-    bio = ""
-# Untuk deskripsi tag meta di homepag
-# description = "blogzam merupakan tempat belajar pemogramman berbahasa indonesia yang memiliki beberapa fitur yaitu course online, diskusi online, dan ujian online."
-
-# keyword = "pemogramman web, belajar membuat website, web programming, pemogramman, membangun website, belajar ngoding, koding, tutorial bahasa indonesia"
+  name = "ilzam afif"
+  homepage = "https://twitter.com/ilzam27_"
 
 
-[frontmatter]
-date = ["date", "publishDate", "lastmod"]
-lastmod = [":git", "lastmod", "date", "publishDate"]
-publishDate = ["publishDate", "date"]
-expiryDate = ["expiryDate"]
-
-
-[menu]
-  [[menu.main]]
-    identifier = "github"
-    name = "Github"
-    url = "https://github.com/ilzamafif"
-    wight = 1
+[params]
+mainSections = ["post"]
+headTitle = "blogzam"
+[[params.socials]]
+name = "About Me"
+link = "https://instagram.com/ilzam27_"
+[[params.socials]]
+name = "Github"
+link = "https://github.com/ilzamafif"
+postHeaderContent = ""
+postFooterContent = "<br/><br/><p>Subscribe to：<a target='_blank' href='https://mailchi.mp/a1a0d59e7a19/joway'>Joway's Blog</a></p>"
+# extraCSSFiles = ["css/foo.css", "css/bar.css"]
+extraCSSFiles = []
