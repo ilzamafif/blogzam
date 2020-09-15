@@ -1,3 +1,6 @@
 [submodule "mainroad"]
 	path = mainroad
 	url = https://github.com/vimux/mainroad
+[submodule "hugo-theme-yinyang"]
+	path = hugo-theme-yinyang
+	url = https://github.com/joway/hugo-theme-yinyang.git
