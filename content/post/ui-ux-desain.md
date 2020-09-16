@@ -16,7 +16,7 @@ sedangkan UX (user experience) design atau pengalaman pengguna merupakan proses 
 - website 
 - app mobile (ios /android)
 
-### perbedaan UI UX desain 
+### perbedaan UI dengan UX desain 
 1. tujuan desain 
 2. proses desain 
 3. kompenen desain 
