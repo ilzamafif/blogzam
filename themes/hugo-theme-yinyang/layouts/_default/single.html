@@ -61,28 +61,7 @@
           {{ end }}
           <!-- split -->
           <div style="height: 50px;"></div>
-          {{ if .Site.Params.disqus }}
-          <div class="post-comments">
-            {{ partial "disqus.html" . }}
-          </div>
-          {{ end }}
-        {{ end }}
-
-        {{ partial "footer.html" . }}
-      </div>
-    </div>
-  </article>
-
-  {{ partial "scripts.html" . }}
-  {{ if .Site.Params.extraBody }}
-  {{ .Site.Params.extraBody | safeHTML }}
-  {{ end }}
-
-</body>
-
-</html>
-
-<div id="disqus_thread"></div>
+          <div id="disqus_thread"></div>
 <script>
 
 /**
@@ -103,3 +82,23 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
+          {{ if .Site.Params.disqus }}
+          <div class="post-comments">
+            {{ partial "disqus.html" . }}
+          </div>
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+  </article>
+
+  {{ partial "scripts.html" . }}
+  {{ if .Site.Params.extraBody }}
+  {{ .Site.Params.extraBody | safeHTML }}
+  {{ end }}
+
+</body>
+
+</html>
