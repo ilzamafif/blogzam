@@ -12,9 +12,11 @@ DefaultContentLanguage = "cn"
 [params]
 mainSections = ["post"]
 headTitle = "blogzam"
+# Google analytics code - remove if you do not have/want Google Analytics - needs JavaScript
+googleAnalytics = "UA-171646750-1"
 [[params.socials]]
 name = "About Me"
-link = "https://instagram.com/ilzam27_"
+link = "https://instagram.com/ilzamafif"
 [[params.socials]]
 name = "Github"
 link = "https://github.com/ilzamafif"
