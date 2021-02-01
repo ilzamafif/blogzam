@@ -19,3 +19,18 @@ draft: false
 [ 7 cara membuat kelas dan memsaukkan  user ke kelas](../../belajar/cara-buat-kelas-dan-memasukkan-ke-kelas/)
 
 [ 8 cara upload user guru](../../belajar/cara-upload-user-guru/)
+
+[ 9. cara membuat materi ](../../belajar/cara-membuat-materi)
+
+[ 10. cara membuat soal denagn examview](../../belajar/cara-upload-soal-di-moodle)
+
+[11. cara membuat quiz](../../belajar/cara-membuat-quiz.md)
+
+[13. cara penilaian pg dan essay ](../../belajar/cara-penilaian)
+
+
+[ 14. rekap penilaian dengan exel](../../belajar/cara-rekap-penilaian-beroutpit-excel)
+
+[15. cara buat forum diskusi](../../belajar/cara-buat-forum-diskusi)
+
+[16. contoh penerapan ](../../belajar/contoh/penerapan)

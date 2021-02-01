@@ -2,6 +2,8 @@
 title: "Belajar NodeJS"
 date: 2021-01-11T07:16:06Z
 draft: false
+categories:
+  - "Node Js"
 ---
 
 ## Belajar NodeJS
