@@ -1,26 +1,42 @@
 baseURL = "https://blogzam.js.org/"
-languageCode = "en-us"
 title = "blogzam"
-theme = "hugo-theme-yinyang"
-DefaultContentLanguage = "cn"
+languageCode = "en-us"
+theme = "mainroad"
+paginate = "10" # Number of posts per page
+disqusShortname = "ilzamafif" # Enable Disqus comments by entering your Disqus shortname
+googleAnalytics = "UA-171646750-1" # Enable Google Analytics by entering your tracking id
 
-[author]
-  name = "ilzam afif"
-  homepage = "https://twitter.com/ilzam27_"
+[Author] # Used in authorbox
+  name = "Ilzam Afif"
+
+[Params.style.vars]
+  highlightColor = "#2d6ce2"
+  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
 
 
-[params]
-mainSections = ["post"]
-headTitle = "blogzam"
-# Google analytics code - remove if you do not have/want Google Analytics - needs JavaScript
-googleAnalytics = "UA-171646750-1"
-[[params.socials]]
-name = "About Me"
-link = "https://instagram.com/ilzamafif"
-[[params.socials]]
-name = "Github"
-link = "https://github.com/ilzamafif"
-postHeaderContent = ""
-postFooterContent = "<br/><br/><p>Subscribe to：<a target='_blank' href='https://mailchi.mp/a1a0d59e7a19/joway'>Joway's Blog</a></p>"
-# extraCSSFiles = ["css/foo.css", "css/bar.css"]
-extraCSSFiles = []
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  facebook = "ilzam.afif"
+  twitter = "ilzamafif"
+  instagram = "ilzamafif"
+  linkedin = "ilzamafif"
+  telegram = "username"
+  github = "ilzamafif"
+
+
+
+
+
+
+
+
