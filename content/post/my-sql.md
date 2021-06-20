@@ -38,3 +38,51 @@ draft: false
 - merupakan bahasa yang digunakan untuk mengirim perintah ke DBMS
 - berisi instruksi untuk CRUD mekalui DBMSt
 - secara garis besar perintah SQL sama, namun setiap DBMS ada improvment yang membedakan hal hal kecil dalam perintah SQL
+
+# My SQL
+- DBMS rasiaonal, opem source, paling populer di dunia saat ini
+- tidak hanya opem source tetapi jiga gratis
+- th 1995 oleh David axmark dan michael widenius
+- sangat populer di kalangan programmer php
+- [my SQL](www.mysql.com)
+
+## mysql community & enterprise
+- jangan sampai salah download
+- mysql enterprise merupakan versi berbayar merupakan improvement dari  mysql community, biasanya menambahkan monitoring dan suport
+- mysql community gratis jika terjadi error di selesaikan sendiri , jika ingin monitoring biasanya monitoring sendiri
+
+## mysql vs maria DB 
+- 2008 mysql di akui sun microsistem
+- 2009 sun diakuisisi oracle
+- 2 founder mysql keluar dan membuat dbms yaitu maria DB 
+- maria DB merupakam fork dari mysl
+- [mariadb](www.mariadb.org)
+
+# mengsintall mysql 
+- download langsung dari offical website 
+- stack XAMPP
+
+## cek versi mysql 
+```cmd 
+mysql --version
+```
+
+## login mysql 
+```cmd 
+mysql -uroot -p
+```
+
+## menggunakan mysql cilent
+- mysql cilent merupakan apk berbasis terminal yang di sediakan mysql untuk berkomunikai dengan mysql server
+- karana berbasis terminal cocok untuk prdouction
+- tidak oerlu install mydql cilent karena sudah tersedia di dalam mysql ketika kita menginsttallnya
+
+## mysql workbennch
+- aplikasi mysql cilent berbasis dekstop
+- apk gratis
+- [workbench](www.mysql.com/product/workbench)
+
+## Jetbrains DataGrip
+- database cilent berbayar
+- mendukung banyak DBMS termasuk rasional, noSQL seperti mongoDB, cassandra
+- [jerBrains](www.jetbrains.com/datagrip)
