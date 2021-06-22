@@ -86,3 +86,48 @@ mysql -uroot -p
 - database cilent berbayar
 - mendukung banyak DBMS termasuk rasional, noSQL seperti mongoDB, cassandra
 - [jerBrains](www.jetbrains.com/datagrip)
+
+# database
+- database adalah tempat menyimpan table
+- misalkan di database, table adalah filenya dan database adalah foldernya
+- biasanya kita akan membuat satu database untuk satu jenis aplikasi walaupun satu aplikasi bisa membutuhkan lebih dari satu database 
+
+## melihat semua database 
+```
+show databases;
+```
+## membuat database 
+```
+create database nama_database
+```
+## menghapus database 
+```
+drop database nama_database
+```
+## memilih database
+```
+use nama_database
+```
+
+# tipe data
+- saat kita membuat data di excel, kita bisa mene tukan tipe data yang kita masukkan ke kolom di excel
+- di mysql kita juga dapat membuat tipe data pada kolom di dalam table
+- ada banyak tipe data di mysql dari yang simple sampai komplex
+- biasanya kita membuat tipe data yang sesuai pada kolom
+
+# tipe data number
+- secara garis besar tipe data number di mysql ada 2 jenis
+- integer atau tipe number bilangan bulat
+- floating point atau tioe data number pecahan
+
+## decimal
+- tipe data khusus yang bisa ditentukan jumlah presicion(angkanya) dan scalenya(coma)
+
+# tipe data sting
+- ini namanya sting atau text
+- ada banyak tioe data sting di MySQL
+
+## char atau varchar
+- bisa menentukan jumlah panjang maksimal yang di tampung char
+- misal CHAR(20) atau VARCHAR(10) artinya jumlah maksimal karakternya 10 karakter
+- maksimum ukuran char dan varchar adalah 65535 karakter
