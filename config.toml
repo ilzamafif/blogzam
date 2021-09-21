@@ -1,42 +1,21 @@
-baseURL = "https://blogzam.js.org/"
-title = "blogzam"
-languageCode = "en-us"
-theme = "mainroad"
-paginate = "10" # Number of posts per page
-disqusShortname = "ilzamafif" # Enable Disqus comments by entering your Disqus shortname
-googleAnalytics = "UA-171646750-1" # Enable Google Analytics by entering your tracking id
+title = "Blogzam"
 
-[Author] # Used in authorbox
+baseurl = "https://www.blogzam.js.org/"
+
+MetaDataFormat = "yaml"
+
+themesDir = "themes"
+
+theme = "kendi"
+
+description = ""
+
+languageCode = "id-ID"
+
+disqusShortname = "ilzamafif" 
+
+googleAnalytics = "UA-171646750-1" 
+
+[Author] 
   name = "Ilzam Afif"
-
-[Params.style.vars]
-  highlightColor = "#2d6ce2"
-  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
-
-[Params.sidebar]
-  home = "right" # Configure layout for home page
-  list = "left"  # Configure layout for list pages
-  single = false # Configure layout for single pages
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
-
-
-[Params.widgets]
-  recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget
-
-[Params.widgets.social]
-  # Enable parts of social widget
-  facebook = "ilzam.afif"
-  twitter = "ilzamafif"
-  instagram = "ilzamafif"
-  linkedin = "ilzamafif"
-  telegram = "username"
-  github = "ilzamafif"
-
-
-
-
-
-
-
 
