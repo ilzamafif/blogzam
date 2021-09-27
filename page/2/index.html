@@ -1,1 +1,176 @@
-<!doctype html><html><head><meta name=generator content="Hugo 0.68.3"><title>Blogzam</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1"><meta itemprop=name content="Blogzam"><meta itemprop=description content><meta property="og:title" content="Blogzam"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://www.blogzam.js.org/"><meta property="og:updated_time" content="2021-05-01T15:13:46+07:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Blogzam"><meta name=twitter:description content><link rel=stylesheet href=/css/style.css><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-171646750-1','auto');ga('send','pageview');}</script></head><body><header><div class="jumbotron jumbotron-fluid bg-success text-white"><div class=container><div class=row><div class=col><h1>Ilzam</h1></div></div></div></div></header><article class=card-post><div class=container><div class=row><div class="col-md-4 mb-4 d-flex"><div class=card><a href=/post/internet-dan-teknologi-web/></a><div class=card-body><h4 class=card-title><a class=text-dark href=/post/internet-dan-teknologi-web/>Internet Dan Teknologi Web</a></h4></div></div></div><div class="col-md-4 mb-4 d-flex"><div class=card><a href=/post/4.2.map-filter-reduce/></a><div class=card-body><h4 class=card-title><a class=text-dark href=/post/4.2.map-filter-reduce/>Map Filter Reduce</a></h4></div></div></div><div class="col-md-4 mb-4 d-flex"><div class=card><a href=/post/my-sql/></a><div class=card-body><h4 class=card-title><a class=text-dark href=/post/my-sql/>My sql</a></h4></div></div></div><div class="col-md-4 mb-4 d-flex"><div class=card><a href=/post/1.2.object-create/></a><div class=card-body><h4 class=card-title><a class=text-dark href=/post/1.2.object-create/>Object Create</a></h4></div></div></div><div class="col-md-4 mb-4 d-flex"><div class=card><a href=/post/1.1.object-reverse/></a><div class=card-body><h4 class=card-title><a class=text-dark href=/post/1.1.object-reverse/>Object Reverse</a></h4></div></div></div><div class="col-md-4 mb-4 d-flex"><div class=card><a href=/post/mvc/1.pendahuluan/></a><div class=card-body><h4 class=card-title><a class=text-dark href=/post/mvc/1.pendahuluan/>Pendahuluan</a></h4></div></div></div></div></div></article><footer class="border border-bottom-0 border-left-0 border-right-0"><div class="container pt-3 pb-3 pt-md-5 pb-md-5"><div class=row><div class=col>&copy; 2021 <a href=https://www.blogzam.js.org/>Blogzam</a></div></div></div></footer></body></html>
+<!doctype html><html><head><meta name=generator content="Hugo 0.68.3"><meta charset=utf-8><meta content><title>Blogzam</title><link rel=stylesheet href=./libraries/all.css><link rel=stylesheet href=./libraries/owl.carousel.min.css><link rel=stylesheet href=./libraries/owl.theme.default.min.css><link rel=stylesheet href=./libraries/aos.css><link rel=stylesheet href=./styles/main.css></head><body><main><section class=container><div class=site-content><div class=posts><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
+<span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;01-03-2021</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=/post/2.2.closures/>Closures</a><p><h1 id=closures>closures</h1><ul><li><p>closures merupakan kombinasi antara functio dengan lexical scope di dalam functio tsb.(mdn)</p></li><li><p>function mereturn function (code fellow)</p></li><li><p>sebuah function yang yang sebelumnya dsudah memiliki data hasil dari function yang lain</p></li><li><p>function di dalam function yang membutuhkan variable global dan variable parrent memngembalikan function</p></li></ul><h2 id=lexical-scope>lexical scope</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>init</span>(){
+  <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;kapet&#39;</span>; <span style=color:#75715e>// variabel lokal
+</span><span style=color:#75715e></span>  <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>tampilNama</span>(){ <span style=color:#75715e>//inner function(closure)
+</span><span style=color:#75715e></span>    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>nama</span>); <span style=color:#75715e>//akses ke parent variable(lexical scope)
+</span><span style=color:#75715e></span>  }
+  <span style=color:#a6e22e>tampilNama</span>();
+}
+<span style=color:#a6e22e>init</span>();
+</code></pre></div><p>pada kasus ini function tampil nama sgb inner function langsung di jalankan coba lakukan</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>init</span>(){
+  <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;kapet&#39;</span>;
+  <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>tampilNama</span>(){ 
+    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>nama</span>); 
+  }
+  <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>tampilNama</span>;
+}
+<span style=color:#a6e22e>init</span>();
+</code></pre></div><p>sampai sini istilahnya function hanya berjalan sebagian kita dapat lakukan untuk membungkus di dalam variabel</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>init</span>(){
+  <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;kapet&#39;</span>;
+  <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>tampilNama</span>(){ 
+    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>nama</span>); 
+  }
+  <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>tampilNama</span>;
+}
+<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>initial</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>init</span>();
+<span style=color:#a6e22e>initaial</span>();
+</code></pre></div><p>dan memungkinkan membuat function factory</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>init</span>(){
+  <span style=color:#75715e>// let nama = &#39;kapet&#39;;
+</span><span style=color:#75715e></span>  <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>tampilNama</span>(<span style=color:#a6e22e>nama</span>){ 
+    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>nama</span>); 
+  }
+  <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>tampilNama</span>;
+}
+<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>initial</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>init</span>();
+<span style=color:#a6e22e>initaial</span>(<span style=color:#e6db74>&#39;kapeeet&#39;</span>);
+</code></pre></div><p>ini salah satu penggunaan closure atau langsung return function nya saja dengan anonymous function</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>init</span>(){
+  <span style=color:#75715e>// let nama = &#39;kapet&#39;;
+</span><span style=color:#75715e></span>  <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>nama</span>){ 
+    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>nama</span>); 
+  }
+}
+<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>initial</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>init</span>();
+<span style=color:#a6e22e>initaial</span>(<span style=color:#e6db74>&#39;kapeeet&#39;</span>);
+</code></pre></div><p>itupun salah satu penggunaan closure</p><h2 id=kenapa-menggunakan-closure--mdn>kenapa menggunakan closure ? (mdn)</h2><ul><li>untuk menggunakan function factory</li><li>untuk membuat privat method</li></ul><h3 id=untuk-menggunakan-function-factory>untuk menggunakan function factory</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>salam</span>(<span style=color:#a6e22e>waktu</span>){
+  <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>nama</span>){
+    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>`hallo </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>nama</span><span style=color:#e6db74>}</span><span style=color:#e6db74>,selamat </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>waktu</span><span style=color:#e6db74>}</span><span style=color:#e6db74> semoga harimu menyenangkan`</span>);
+  }
+}
+
+<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>ucapSalam</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>salam</span>(<span style=color:#e6db74>&#39;pagi&#39;</span>);
+<span style=color:#a6e22e>ucapSalam</span>();
+</code></pre></div><h3 id=untuk-membuat-privat-method>untuk membuat privat method</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>add</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span>(){
+<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>counter</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+  <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>function</span>(){
+    <span style=color:#66d9ef>return</span> <span style=color:#f92672>++</span><span style=color:#a6e22e>counter</span>;
+  } 
+}
+<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>a</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>add</span>();
+
+<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>a</span>())
+<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>a</span>())
+</code></pre></div><p>atau dengan menggunakan imediete inwork function</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>add</span> <span style=color:#f92672>=</span> (<span style=color:#66d9ef>function</span>(){
+<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>counter</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+  <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>function</span>(){
+    <span style=color:#66d9ef>return</span> <span style=color:#f92672>++</span><span style=color:#a6e22e>counter</span>;
+  } 
+})();
+
+<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>add</span>())
+<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>add</span>())
+<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>add</span>())
+</code></pre></div></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
+<span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;01-03-2021</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=/post/2.1.execution-context-hoisting-scope/>Execution Context, Hoisting, Scope</a><p><h1 id=closures>Closures</h1><h2 id=2-fase-exexcution-context>2 fase exexcution context</h2><ul><li>createion</li><li>exexcution</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>nama</span>);
+<span style=color:#66d9ef>var</span> <span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;ilzam&#39;</span>;
+</code></pre></div><p>terjadi fase creation oada global kontext
+ada var di isi undifinend
+ada function di isi function itu sendiri
+terjadi hoisting
+mendefinisikan object window sebagai object globalg
+mendefinisiakn window sebagi this
+fase exexcution</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>sayHello</span>);
+<span style=color:#66d9ef>var</span> <span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;ilzam afif&#39;</span>;
+<span style=color:#66d9ef>var</span> <span style=color:#a6e22e>umur</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>16</span>;
+
+<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>sayHello</span>(){
+  <span style=color:#66d9ef>return</span> <span style=color:#e6db74>`hai nama saya </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>nama</span><span style=color:#e6db74>}</span><span style=color:#e6db74> saya berumur </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>umur</span><span style=color:#e6db74>}</span><span style=color:#e6db74> tahun`</span>;
+}
+</code></pre></div><p>kalo ketemu function seloalh membuat local exexcution context yang didalmnya terdapat creation exexcution contex (akses window dan argument) ada hoisting lokal</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;ilzam afif&#39;</span>;
+<span style=color:#66d9ef>var</span> <span style=color:#a6e22e>username</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;ilzamafif&#39;</span>;
+
+<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>cetakUrl</span>(<span style=color:#a6e22e>username</span>){
+  <span style=color:#a6e22e>instagramUrl</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;http://instagram.com/&#39;</span>;
+  <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>instagramUrl</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>username</span>;
+}
+
+<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>cetakUrl</span>(<span style=color:#a6e22e>username</span>));
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>a</span>(){
+  <span style=color:#66d9ef>return</span> <span style=color:#e6db74>`ini a`</span>;
+  <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>b</span>(){
+    <span style=color:#66d9ef>return</span> <span style=color:#e6db74>`ini b`</span>;
+    <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>c</span>(){
+      <span style=color:#66d9ef>return</span> <span style=color:#e6db74>`ini c`</span>;
+    }
+    <span style=color:#a6e22e>c</span>();
+  }
+  <span style=color:#a6e22e>b</span>();
+}
+<span style=color:#a6e22e>c</span>();
+</code></pre></div><p>cobain ini(tebakan)</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript>
+</code></pre></div></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
+<span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;01-03-2021</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=/post/4.1.high-order-function/>High Order Function</a><p><h1 id=high-order-function>High Order Function</h1><ul><li>function yang beroprasi di dalam function lain baik di gunakan di dalam argumen, maupun sgb return falue (eloquentjavascript.net)</li><li>di dalam javascript : Frist Class function / inti dari javasript adalah function</li><li>di dalam javascript function di perlakukan sbg objek</li><li>objek == value tipe data, function == tipe data</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>kerjakanTgs</span>(<span style=color:#a6e22e>mapel</span>, <span style=color:#a6e22e>selesai</span>){
+  <span style=color:#a6e22e>conole</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>`</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>mapel</span><span style=color:#e6db74>}</span><span style=color:#e6db74>`</span>);
+  <span style=color:#a6e22e>selesai</span>();
+}
+
+<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>selesai</span>(){
+  <span style=color:#a6e22e>alert</span>(<span style=color:#e6db74>&#39;selesai&#39;</span>);
+}
+
+
+<span style=color:#75715e>// ket : function kerjakanTgs = high order Function
+</span><span style=color:#75715e>//selsesai = callback
+</span><span style=color:#75715e></span>
+<span style=color:#a6e22e>setTimeout</span>(<span style=color:#66d9ef>function</span>(){
+  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;oke&#39;</span>)
+}, <span style=color:#ae81ff>1000</span>)
+</code></pre></div><p>kenapa high order function</p><ul><li>abstaraksi = kode sederhana atau simple / menyembunyiakn kerumitan</li><li>dengan terbiasa membuat dengan function masuk ke pendekatan function programing</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>5</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span>){
+  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>i</span>)
+}
+
+<span style=color:#75715e>// jika abstaraksi
+</span><span style=color:#75715e></span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>reapetLog</span>(<span style=color:#a6e22e>n</span>){
+  <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>let</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>n</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span>){
+    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>i</span>);
+  }
+}
+
+<span style=color:#a6e22e>reapetLog</span>(<span style=color:#ae81ff>9</span>);
+</code></pre></div><p>contoh high order function</p><ul><li>Array.prototype.map()</li><li>Array.prototype.reduce()</li><li>Array.prototype.filter()</li></ul></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
+<span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;01-03-2021</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=/post/internet-dan-teknologi-web/>Internet Dan Teknologi Web</a><p><ul><li>Website</li><li>HTTP</li><li>WWW</li><li>Web Browser</li><li>Web server</li><li>Web Hosting</li><li>Nama Domain</li><li>Istilah dalam Web</li><li>Tools Pendukung</li></ul><h2 id=website>Website</h2><p>Website adalah sebuah halaman yang menampilkan informasi melalui teks atau gambar yang dapat diakses melalui internet menggunakan browser.</p><h2 id=http-server>HTTP Server</h2><p>HTTP Server merupakan sebuah software yang dapat menerima transaksi dari HyperText Transfer Protocol dalam suatu website atau biasa disebut dengan &ldquo;HTTP SERVER&rdquo;.</p><h2 id=www>WWW</h2><p>WWW adalah kumpulan sumber daya internet (seperti FTP, telnet, Usenet), teks hyperlink, file audio, dan video, dan situs jarak jauh yang dapat diakses dan dicari oleh browser berdasarkan standar seperti HTTP dan TCP / IP.</p><h2 id=web-browser>Web Browser</h2><p>apliaksi yang di gunakan untuk menjelajah internet untuk mencari informasi dari suatu halaman website.</p><h2 id=web-server>Web Server</h2><p>Web Server adalah tempat untuk menampung, menyimpan data (HTML, CSS, dan JS disimpan di sini), server juga menanggapi, menyediakan, dan mengelola data yang diminta oleh client.</p><h2 id=web-hosting>Web Hosting</h2><p>adalah jasa layanan internet yang menyediakan sumber daya peladen-peladen untuk disewakan sehingga memungkinkan organisasi atau individu menempatkan informasi di internet berupa HTTP, FTP, EMAIL, atau DNS.</p><h2 id=nama-domain>Nama Domain</h2><p>Domain Name System (DNS) yaitu nama unik yang di berikan untuk mengubah/mengarahkan website, mengidentifikasi alamat (IP address) di internet melalui sebuah nama domain.</p><h2 id=konsep-cilent--server>konsep cilent & server</h2><h3 id=server-side>Server-side</h3><p>Untuk client side, semua proses terjadi di sisi pengguna, client meminta data ke server di mana data yang dikirimkan nanti diolah di sisi client. Biasanya data yang diolah dalam bentuk HTML, CSS, dan JavaScript.</p><h3 id=client-side>Client-side</h3><p>Sedangkan untuk server side, semua proses yang terjadi dilakukan di sisi server. Server side bertanggung jawab untuk merespon data yang diminta oleh client side. Biasanya server side merupakan tempat di mana terjadinya interaksi pada database, sehingga sisi client tidak mengetahui prosesnya dan memang tidak boleh tahu. Client hanya diberikan sebuah data hasil olahan dari sisi server.</p><h2 id=tools-pendukung>Tools Pendukung</h2><h3 id=text-editor>Text Editor</h3><p>Text Editor adalah editor teks program yang dirancang khusus untuk mengedit kode sumber dari program komputer yang dibangun ke dalam lingkungan pengembangan terintegrasi (IDE) atau browser web.</p><ul><li>Visual StudioCode</li><li>Sublime Text</li><li>dll.</li></ul><h3 id=web-browser-1>Web browser</h3><ul><li>Google chrome</li><li>Mozilla Firefox</li><li>dll</li></ul><h3 id=desain-tools>Desain Tools</h3><ul><li>Adobe XD</li><li>PhotoShop</li><li>dll.</li></ul></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class="pagination flex-row"><div class="pagination flex-row"><a href=#><i class="fas fa-chevron-left"></i></a><a href=# class=pages>1</a>
+<a href=# class=pages>2</a>
+<a href=# class=pages>3</a><li class="disabled page-item"><a class=page-link href=#><span aria-hidden=true>&mldr;</span></a></li><a href=# class=pages>5</a>
+<a href=/page/5/><i class="fas fa-chevron-right"></i></a></div></div></div><aside class=sidebar><div class=category><h2>Category</h2><ul class=category-list><li class=list-items data-aos=fade-left data-aos-delay=100><a href=#>Software</a>
+<span>(05)</span></li><li class=list-items data-aos=fade-left data-aos-delay=200><a href=#>Techonlogy</a>
+<span>(02)</span></li><li class=list-items data-aos=fade-left data-aos-delay=300><a href=#>Lifestyle</a>
+<span>(07)</span></li><li class=list-items data-aos=fade-left data-aos-delay=400><a href=#>Shopping</a>
+<span>(01)</span></li><li class=list-items data-aos=fade-left data-aos-delay=500><a href=#>Food</a>
+<span>(08)</span></li></ul></div><div class=popular-post><h2>Popular Post</h2><div class=post-content data-aos=flip-up data-aos-delay=200><div class=post-image><div><img src=./images/popular-post/m-blog-1.jpg class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+2019</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=#>New data recording system to better analyse road accidents</a></div></div><div class=post-content data-aos=flip-up data-aos-delay=300><div class=post-image><div><img src=./images/popular-post/m-blog-2.jpg class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+2019</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=#>New data recording system to better analyse road accidents</a></div></div><div class=post-content data-aos=flip-up data-aos-delay=400><div class=post-image><div><img src=./images/popular-post/m-blog-3.jpg class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+2019</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=#>New data recording system to better analyse road accidents</a></div></div><div class=post-content data-aos=flip-up data-aos-delay=500><div class=post-image><div><img src=./images/popular-post/m-blog-4.jpg class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+2019</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=#>New data recording system to better analyse road accidents</a></div></div><div class=post-content data-aos=flip-up data-aos-delay=600><div class=post-image><div><img src=./images/popular-post/m-blog-5.jpg class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
+2019</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=#>New data recording system to better analyse road accidents</a></div></div></div><div class=newsletter data-aos=fade-up data-aos-delay=300><h2>Newsletter</h2><div class=form-element><input type=text class=input-element placeholder=Email>
+<button class="btn form-btn">Subscribe</button></div></div><div class=popular-tags><h2>Popular Tags</h2><div class="tags flex-row"><span class=tag data-aos=flip-up data-aos-delay=100>Software</span>
+<span class=tag data-aos=flip-up data-aos-delay=200>technology</span>
+<span class=tag data-aos=flip-up data-aos-delay=300>travel</span>
+<span class=tag data-aos=flip-up data-aos-delay=400>illustration</span>
+<span class=tag data-aos=flip-up data-aos-delay=500>design</span>
+<span class=tag data-aos=flip-up data-aos-delay=600>lifestyle</span>
+<span class=tag data-aos=flip-up data-aos-delay=700>love</span>
+<span class=tag data-aos=flip-up data-aos-delay=800>project</span></div></div></aside></div></section></main><footer class=footer><div class=container><div class=about-us data-aos=fade-right data-aos-delay=200><h2>About us</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
+iure, autem nulla tenetur repellendus.</p></div><div class=newsletter data-aos=fade-right data-aos-delay=200><h2>Newsletter</h2><p>Stay update with our latest</p><div class=form-element><input type=text placeholder=Email><span><i class="fas fa-chevron-right"></i></span></div></div><div class=instagram data-aos=fade-left data-aos-delay=200><h2>Instagram</h2><div class=flex-row><img src=./images/instagram/thumb-card3.png alt=insta1>
+<img src=./images/instagram/thumb-card4.png alt=insta2>
+<img src=./images/instagram/thumb-card5.png alt=insta3></div><div class=flex-row><img src=./images/instagram/thumb-card6.png alt=insta4>
+<img src=./images/instagram/thumb-card7.png alt=insta5>
+<img src=./images/instagram/thumb-card8.png alt=insta6></div></div><div class=follow data-aos=fade-left data-aos-delay=200><h2>Follow us</h2><p>Let us be Social</p><div><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i><i class="fab fa-youtube"></i></div></div></div><div class="rights flex-row"><h4 class=text-gray>Copyright ©2020 All rights reserved | made by
+<a href=# target=_black>Blogzam</a></h4></div><div class=move-up><span><i class="fas fa-arrow-circle-up fa-2x"></i></span></div></footer><script src=./scripts/Jquery3.4.1.min.js></script><script src=./scripts/owl.carousel.min.js></script><script src=./scripts/aos.js></script><script src=./scripts/main.js></script></body></html>
