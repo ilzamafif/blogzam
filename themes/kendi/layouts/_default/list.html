@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      {{ partial "head.html" . }}
+  </head>
+
+<body>
+    <main>
+        <section class="container">
+            <div class="site-content">
+
+              {{ partial "posts.html" . }}
+              {{ partial "sidebar.html" . }}
+
+            </div>
+        </section>
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+
+</html>

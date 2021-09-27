@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      {{ partial "head.html" . }}
+  </head>
+
+<body>
+    <main>
+        <section class="container">
+            <div class="site-content">
+
+                <div class="posts">
+                  <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                      <div class="post-image">
+                          <div class="post-info flex-row">
+                              <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;<a href="{{ .Site.Author.homepage }}">{{ .Site.Author.name }}</a>
+                              </span>
+                              <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;  | <time>{{ .Date.Format "02-01-2006" }}</time>
+                              </span>
+                              <span>2 Commets</span>
+                          </div>
+                      </div>
+                      <div class="post-title">
+                          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                          <p>
+                            {{ .Content }}
+                          </p>
+                      </div>
+                  </div>
+                  <hr>
+                </div>
+                
+              {{ partial "sidebar.html" . }}
+
+            </div>
+        </section>
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+
+</html>

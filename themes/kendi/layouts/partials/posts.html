@@ -1,25 +1,29 @@
-<article class="card-post">
-    <div class="container">
-        <div class="row">
-
-            {{ $paginator := .Paginate (where .Site.Pages "Type" "post") 6 }}
-            {{ range $paginator.Pages }}
-                <div class="col-md-4 mb-4 d-flex">
-                    <div class="card">
-                        <a href="{{ .RelPermalink }}">
-                     
-                       
-                        </a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a class="text-dark" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                            </h4>
-                        </div>
-                    </div>
-
-                </div>
-            {{ end }}
-
-        </div>
+<div class="posts">
+    {{ $paginator := .Paginate (where .Site.Pages "Type" "post") 4 }}
+    {{ range $paginator.Pages }}
+          <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+              <div class="post-image">
+                  <div>
+                      <img src="./images/Blog-post/blog1.png" class="img" alt="blog1">
+                  </div>
+                  <div class="post-info flex-row">
+                      <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; {{ .Site.Author.name }}</span>
+                      <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{ .Date.Format "02-01-2006" }}</span>
+                      <span>2 Commets</span>
+                  </div>
+              </div>
+              <div class="post-title">
+                  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  <p>
+                    {{ .Content }}
+                  </p>
+                  <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+              </div>
+          </div>
+          <hr>
+    {{ end }}
+    
+    <div class="pagination flex-row">
+      {{ partial "pagination.html" . }}
     </div>
-</article>
+</div>
