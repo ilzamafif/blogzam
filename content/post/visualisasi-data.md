@@ -9,15 +9,18 @@ dalam bahasa indonesia
 
 Visualisasi data merupakan cara mengomunikasikan sebuah informasi atau data dalam bentuk visual seperti diagram, grafik, atau representasi visual lainnya.
 
+Pentingnya penggunaan visualisasi data
+  - Komunikasi lebih efektif
+  - Memantau data dengan lebih mudah
 
 macam macam media yang di gunakan untuk visualisai data 
 
 1. Tabel 
-Tabel merupakan salah satu media visualisasi data yang sederhana dan sering kita temukan. 
+Tabel merupakan salah satu media visualisasi data yang sederhana dan sering kita temukan.   - Penyusunan data ke dalam baris dan kolom
 2. Diagram merupakan sebuah representasi data yang digambarkan dalam bentuk grafik
-  - diagram batang 
-  - diagram garis
-  - diagram lingkaran 
+  - diagram batang Visualisasi grafik dalam bentuk batang
+  - diagram garis Visualisasi grafik dalam bentuk garis. 
+  - diagram lingkaran Diagram lingkaran mirip seperti sebuah makanan pizza yang diiris dengan porsi tertentu
   
 visualiasi data juga dapat di terapkan di keseharian contohnya dalam bidang bisnis
 
@@ -38,6 +41,7 @@ Makan Init Data
   - Apakah mereka perlu tahu dan apakah Anda ingin mereka jadi tahu?” 
   - Bagaimana saya bisa menentukan poin penting dan membuat data tersampaikan secara efektif?”
   
-Bayangkan data Anda berupa siswa, dan Anda sebagai seorang data analisyt 
-
-
+Bayangkan data Anda berupa kanvas, dan Anda sebagai seorang data analisyt 
+  - Kepada siapa data ini akan disampaikan?
+  - Data apa yang ingin disampaikan?
+  - Bagaimana cara menyampaikan data tersebut?
