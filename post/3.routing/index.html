@@ -1,24 +1,33 @@
-<!doctype html><html><head><meta charset=utf-8><meta content><title>Arrow Function</title><link rel=stylesheet href=./libraries/all.css><link rel=stylesheet href=./libraries/owl.carousel.min.css><link rel=stylesheet href=./libraries/owl.theme.default.min.css><link rel=stylesheet href=./libraries/aos.css><link rel=stylesheet href=./styles/main.css></head><body><main><section class=container><div class=site-content><div class=posts><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;<a href>Ilzam Afif</a></span>
+<!doctype html><html><head><meta charset=utf-8><meta content><title>routing</title><link rel=stylesheet href=./libraries/all.css><link rel=stylesheet href=./libraries/owl.carousel.min.css><link rel=stylesheet href=./libraries/owl.theme.default.min.css><link rel=stylesheet href=./libraries/aos.css><link rel=stylesheet href=./styles/main.css></head><body><main><section class=container><div class=site-content><div class=posts><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;<a href>Ilzam Afif</a></span>
 <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp; | <time>01-03-2021</time></span>
-<span>2 Commets</span></div></div><div class=post-title><a href=/blogzam/post/3.1.arrow-function/>Arrow Function</a><p><h2 id=function-deklaration>Function deklaration</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>tampilPesan</span>(<span style=color:#a6e22e>nama</span>){
-  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>`hallo $ {nama}`</span>);
+<span>2 Commets</span></div></div><div class=post-title><a href=/blogzam/post/3.routing/>routing</a><p><p>file App.php</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#75715e>&lt;?php</span>
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>App</span> {
+  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>function</span> __construct()
+  {
+    $url <span style=color:#f92672>=</span> $this<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>parseURL</span>();
+  }
+  
+  
+  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>parseURL</span>()
+  {
+    <span style=color:#66d9ef>if</span>(<span style=color:#a6e22e>isset</span>($_GET[<span style=color:#e6db74>&#39;url]){
+</span><span style=color:#e6db74>      $url = rtrim($_GET[&#39;</span><span style=color:#a6e22e>url</span><span style=color:#e6db74>&#39;], &#39;</span><span style=color:#f92672>/</span><span style=color:#e6db74>&#39;); // menghilangkan / di akhir
+</span><span style=color:#e6db74>      $url = filter_var($url, FILTER_SANITIZE_URL); // menhilangkan karakter aneh
+</span><span style=color:#e6db74>      $url = explode(&#39;</span><span style=color:#f92672>/</span><span style=color:#960050;background-color:#1e0010>&#39;</span>, $url); <span style=color:#75715e>// pecah url / dan di hilangkan
+</span><span style=color:#75715e></span>      <span style=color:#66d9ef>return</span> $url;
+    }
+  }
+  
 }
-<span style=color:#a6e22e>tampilPesan</span>(<span style=color:#e6db74>&#39;kapet&#39;</span>);
-</code></pre></div><h2 id=function-expression>function expression</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>tampilNama</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>nama</span>){
-  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;halo&#39;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>nama</span>);
-}
-<span style=color:#a6e22e>tampilNama</span>(<span style=color:#e6db74>&#39;kapeeet&#39;</span>);
-</code></pre></div><h2 id=arrow-function>arrow function</h2><ul><li>bentuk lain yang lebih ringkas dari function expression</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>tampilNama</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>nama</span>) =&gt; {
-  <span style=color:#a6e22e>returm</span> <span style=color:#e6db74>&#39;hallo&#39;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>nama</span>;
-}
-<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>tampilNama</span>(<span style=color:#e6db74>&#39;petpet&#39;</span>));
-</code></pre></div><p>atau jika return hanya satu baris bisa di singakt , return di hapus, kurung kurawal di hapus dan parameter hanya satu bisa hilangkan kurung</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#75715e>// implisit return
-</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>tampilNama</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>nama</span> =&gt; <span style=color:#e6db74>&#39;hallo&#39;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>nama</span>; 
-<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>tampilNama</span>(<span style=color:#e6db74>&#39;petpet&#39;</span>));
-</code></pre></div><p>jiak tidak ada parameter harus ada kurung</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#75715e>// implisit return
-</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>tampilNama</span> <span style=color:#f92672>=</span> () =&gt; <span style=color:#e6db74>&#39;hallo&#39;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>nama</span>; 
-<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>tampilNama</span>(<span style=color:#e6db74>&#39;petpet&#39;</span>));
-</code></pre></div></p></div></div><hr></div><aside class=sidebar><div class=category><h2>Category</h2><ul class=category-list><li class=list-items data-aos=fade-left data-aos-delay=100><a href=#>Software</a>
+</code></pre></div><p>membuat file app/.htaccess</p><pre><code>Options -Indexes
+
+</code></pre><p>membuat file public/.htaccess</p><pre><code>Options -Multiviews
+
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [L]
+``</code></pre></p></div></div><hr></div><aside class=sidebar><div class=category><h2>Category</h2><ul class=category-list><li class=list-items data-aos=fade-left data-aos-delay=100><a href=#>Software</a>
 <span>(05)</span></li><li class=list-items data-aos=fade-left data-aos-delay=200><a href=#>Techonlogy</a>
 <span>(02)</span></li><li class=list-items data-aos=fade-left data-aos-delay=300><a href=#>Lifestyle</a>
 <span>(07)</span></li><li class=list-items data-aos=fade-left data-aos-delay=400><a href=#>Shopping</a>
