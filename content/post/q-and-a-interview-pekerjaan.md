@@ -14,11 +14,11 @@ draft: true
   - website e-commerce
   - website learning menegement system smk
 5. project paling menarik selama di sekolah dan kenapa menarik dan solusinya
-
+  - saya pernah membuat website pos yang paling menantang saya harus membuat API dengan Open API menampilkan api tersebut ke website dan di deploy di colud
 6. project di luar sekolah 
   - membuat rest api menggunakn hapi framework
   - mengkonsumsi restapi untuk website pencarian film 
   - mengkonsumsi api untuk membuat website kumpulan restauraant
   - mechine learning nlp
 7. ada yang di tanyakan
-  - 
+  - di perusahaan ini kesehariannya mengejrjakan apa dan projek apa yang sedang di kerjakan
