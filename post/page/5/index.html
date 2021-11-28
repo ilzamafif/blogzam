@@ -1,46 +1,13 @@
 <!doctype html><html><head><meta charset=utf-8><meta content><title>Posts</title><link rel=stylesheet href=./libraries/all.css><link rel=stylesheet href=./libraries/owl.carousel.min.css><link rel=stylesheet href=./libraries/owl.theme.default.min.css><link rel=stylesheet href=./libraries/aos.css><link rel=stylesheet href=./styles/main.css></head><body><main><section class=container><div class=site-content><div class=posts><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
 <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;01-03-2021</span>
-<span>2 Commets</span></div></div><div class=post-title><a href=/blogzam/post/5.1.template-literal/>Template Literal</a><p><h1 id=template-literal-atau-template-string>template literal atau template string</h1><ul><li>template literal adalah string literal yang memungkinkan adanya expression di dalamnya (MDN web docs)</li><li>menggunakan bavk tick</li><li>multiline string</li><li>embeded expression</li><li>HTML fregments</li><li>expression interpolation</li><li>tagged template</li></ul><h2 id=string-litetal>string litetal</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;ilzam&#39;</span> <span style=color:#75715e>// single quote 
-</span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;ilzam&#34;</span> <span style=color:#75715e>// double quote
-</span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>`ilzam`</span> <span style=color:#75715e>// back tick
-</span></code></pre></div><h3 id=template-literal>template literal</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#e6db74>` string
-</span><span style=color:#e6db74>string 
-</span><span style=color:#e6db74>string`</span> <span style=color:#75715e>// multiline string
-</span><span style=color:#75715e></span><span style=color:#e6db74>`string </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>expression</span><span style=color:#e6db74>}</span><span style=color:#e6db74>`</span> <span style=color:#75715e>// `embeded expression
-</span><span style=color:#75715e></span><span style=color:#a6e22e>tag</span> <span style=color:#e6db74>`string </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>expression</span><span style=color:#e6db74>}</span><span style=color:#e6db74>`</span> <span style=color:#75715e>//taged template
-</span></code></pre></div></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=/5.1.template-literal/>Template Literal</a><p></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
 <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;01-03-2021</span>
-<span>2 Commets</span></div></div><div class=post-title><a href=/blogzam/post/3.2.this-pada-arrow-function/>This Pada Arrow Function</a><p><h1 id=this-pada-arrow-function>This pada arrow function</h1><ul><li>arrow function tidak memiliki konsep this</li><li>tidak bisa membuat constructor function dengan arrow function.</li></ul><h2 id=constructor-function>constructor function</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>Siswa</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span>(){
-  <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;pet&#39;</span>,
-  <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>umur</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>16</span>,
-  <span style=color:#75715e>//console.log(this);
-</span><span style=color:#75715e></span>  <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>sayHello</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span>(){
-    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>`hallo </span><span style=color:#e6db74>${</span><span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>nama</span><span style=color:#e6db74>}</span><span style=color:#e6db74> umur </span><span style=color:#e6db74>${</span><span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>umur</span><span style=color:#e6db74>}</span><span style=color:#e6db74>`</span>)
-  }
-}
-<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>pet</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Siswa</span>();
-</code></pre></div><ul><li>konteks this pada constructor function mengacu ke objek</li></ul><h2 id=objek-literal>objek literal</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>mhs1</span> <span style=color:#f92672>=</span> {
-  <span style=color:#a6e22e>nama</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;petpet&#39;</span>,
-  <span style=color:#a6e22e>umur</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>16</span>,
-  <span style=color:#a6e22e>say</span> <span style=color:#f92672>:</span> <span style=color:#66d9ef>function</span>() {
-   <span style=color:#75715e>// console.log(`hai ${this.nama} umur ${this.umur}`);
-</span><span style=color:#75715e></span>   <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#66d9ef>this</span>);
-  }
-}
-</code></pre></div><ul><li>menggunakan function this mencati ke lexical scope</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>mhs1</span> <span style=color:#f92672>=</span> {
-  <span style=color:#a6e22e>nama</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;petpet&#39;</span>,
-  <span style=color:#a6e22e>umur</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>16</span>,
-  <span style=color:#a6e22e>say</span> <span style=color:#f92672>:</span> () =&gt; {
-   <span style=color:#75715e>// console.log(`hai ${this.nama} umur ${this.umur}`);
-</span><span style=color:#75715e></span>   <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#66d9ef>this</span>);
-  }
-}
-</code></pre></div><ul><li>context arrow function mengacu ke window</li></ul><h2 id=function-declaration>function declaration</h2><ul><li>mengacu window / global</li></ul></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class="pagination flex-row"><div class="pagination flex-row"><a href=#><i class="fas fa-chevron-left"></i></a><a href=# class=pages>1</a>
+<span>2 Commets</span></div></div><div class=post-title><a href=/3.2.this-pada-arrow-function/>This Pada Arrow Function</a><p></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class="pagination flex-row"><div class="pagination flex-row"><a href=#><i class="fas fa-chevron-left"></i></a><a href=# class=pages>1</a>
 <a href=# class=pages>2</a>
 <a href=# class=pages>3</a>
 <a href=# class=pages>4</a>
 <a href=# class=pages>5</a>
-<a href=/blogzam/post/page/5/><i class="fas fa-chevron-right"></i></a></div></div></div><aside class=sidebar><div class=category><h2>Category</h2><ul class=category-list><li class=list-items data-aos=fade-left data-aos-delay=100><a href=#>Software</a>
+<a href=/post/page/5/><i class="fas fa-chevron-right"></i></a></div></div></div><aside class=sidebar><div class=category><h2>Category</h2><ul class=category-list><li class=list-items data-aos=fade-left data-aos-delay=100><a href=#>Software</a>
 <span>(05)</span></li><li class=list-items data-aos=fade-left data-aos-delay=200><a href=#>Techonlogy</a>
 <span>(02)</span></li><li class=list-items data-aos=fade-left data-aos-delay=300><a href=#>Lifestyle</a>
 <span>(07)</span></li><li class=list-items data-aos=fade-left data-aos-delay=400><a href=#>Shopping</a>

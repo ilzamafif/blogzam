@@ -1,117 +1,17 @@
 <!doctype html><html><head><meta charset=utf-8><meta content><title>Tags</title><link rel=stylesheet href=./libraries/all.css><link rel=stylesheet href=./libraries/owl.carousel.min.css><link rel=stylesheet href=./libraries/owl.theme.default.min.css><link rel=stylesheet href=./libraries/aos.css><link rel=stylesheet href=./styles/main.css></head><body><main><section class=container><div class=site-content><div class=posts><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
 <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;01-03-2021</span>
-<span>2 Commets</span></div></div><div class=post-title><a href=/blogzam/post/1.pendahuluan-1/>Pendahuluan</a><p><h1 id=pendahuluan>Pendahuluan</h1><ul><li>pola aesitektur pada perancangan perangkat lunak berorientasi objek</li><li>komponen utamanya model(data), view(tampilan), controller(proses)</li><li>controller<ul><li>perantara antara view dan model</li><li>menangani pemrosesan pada aplikasi</li><li>menangani kasi dari user</li></ul></li><li>viw<ul><li>output, apa yang dilihat usee</li><li>representasi visual dari model</li><li>lapisan presentasi</li></ul></li><li>model<ul><li>representasi pengetahuan</li><li>mengelola data</li><li>logika bisnis</li></ul></li></ul><p>kenapa</p><ul><li>memisahakan antara tampilan data dan proses/logoc</li><li>organisasi dan struktur kode</li><li>perawatan kode / maintance</li><li>implemenrasi oop</li><li>di gunakan banyak web aplication framework php</li></ul></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=/1.pendahuluan-1/>Pendahuluan</a><p></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
 <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;01-03-2021</span>
-<span>2 Commets</span></div></div><div class=post-title><a href=/blogzam/post/2.persiapan/>persiapan</a><p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cmd data-lang=cmd>php-mvc
-  app/
-    controllers/
-    views/
-    models/
-    core/
-      App.php
-      Controller.php
-    init.php
-  public/
-    index.php
-    assets/
-      css/
-      js/
-      img/
-</code></pre></div><p>file index.php</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#75715e>&lt;?php</span>
-<span style=color:#66d9ef>require_once</span> <span style=color:#e6db74>&#34;../app/init.php&#34;</span>
-
-</code></pre></div><p>file init.php</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#75715e>&lt;?php</span>
-<span style=color:#66d9ef>require_once</span> <span style=color:#e6db74>&#34;core/App.php&#34;</span>
-<span style=color:#66d9ef>require_once</span> <span style=color:#e6db74>&#34;core/Controller.php&#34;</span>
-
-</code></pre></div><p>file App.php</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#75715e>&lt;?php</span>
-<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>App</span> {
-  
-}
-</code></pre></div><p>file Controller.php</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#75715e>&lt;?php</span>
-<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Controller</span> {
-  
-}
-</code></pre></div><p>file index.php</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#75715e>&lt;?php</span>
-<span style=color:#66d9ef>require_once</span> <span style=color:#e6db74>&#34;../app/init.php&#34;</span>
-
-$app <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>App</span>;
-</code></pre></div><p>file App.php</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#75715e>&lt;?php</span>
-<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>App</span> {
-  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>function</span> __construct()
-  {
-    <span style=color:#66d9ef>echo</span> <span style=color:#e6db74>&#34;oke&#34;</span>;
-  }
-  
-}
-</code></pre></div></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=/2.persiapan/>persiapan</a><p></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
 <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;01-03-2021</span>
-<span>2 Commets</span></div></div><div class=post-title><a href=/blogzam/post/3.routing/>routing</a><p><p>file App.php</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#75715e>&lt;?php</span>
-<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>App</span> {
-  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>function</span> __construct()
-  {
-    $url <span style=color:#f92672>=</span> $this<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>parseURL</span>();
-  }
-  
-  
-  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>parseURL</span>()
-  {
-    <span style=color:#66d9ef>if</span>(<span style=color:#a6e22e>isset</span>($_GET[<span style=color:#e6db74>&#39;url]){
-</span><span style=color:#e6db74>      $url = rtrim($_GET[&#39;</span><span style=color:#a6e22e>url</span><span style=color:#e6db74>&#39;], &#39;</span><span style=color:#f92672>/</span><span style=color:#e6db74>&#39;); // menghilangkan / di akhir
-</span><span style=color:#e6db74>      $url = filter_var($url, FILTER_SANITIZE_URL); // menhilangkan karakter aneh
-</span><span style=color:#e6db74>      $url = explode(&#39;</span><span style=color:#f92672>/</span><span style=color:#960050;background-color:#1e0010>&#39;</span>, $url); <span style=color:#75715e>// pecah url / dan di hilangkan
-</span><span style=color:#75715e></span>      <span style=color:#66d9ef>return</span> $url;
-    }
-  }
-  
-}
-</code></pre></div><p>membuat file app/.htaccess</p><pre><code>Options -Indexes
-
-</code></pre><p>membuat file public/.htaccess</p><pre><code>Options -Multiviews
-
-RewriteEngine On 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ index.php?url=$1 [L]
-``</code></pre></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
+<span>2 Commets</span></div></div><div class=post-title><a href=/3.routing/>routing</a><p></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class=post-content data-aos=zoom-in data-aos-delay=200><div class=post-image><div><img src=./images/Blog-post/blog1.png class=img alt=blog1></div><div class="post-info flex-row"><span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Ilzam Afif</span>
 <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;01-03-2021</span>
-<span>2 Commets</span></div></div><div class=post-title><a href=/blogzam/post/5.2.tagged-template-literal/>Tagged Tamplate Literal</a><p><h1 id=tagged-tamplate-literal>tagged tamplate Literal</h1><ul><li>bentuk yang lebih kompleks dari template literal, memungkinkan kita untuk membaca tempalate literal melalui sebuah function</li></ul><p>di gunakan untuk</p><ul><li>escaping HTML tags</li><li><a href=https://github.com/skolmer/es2015-i18n-tag>tramslation & internationalization</a></li><li><a href=https://styled-components.com>style components</a></li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#75715e>//tagged template
-</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;kapet&#39;</span>;
-<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>umur</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>16</span>;
-
-<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>coba</span>(<span style=color:#a6e22e>strings</span>, ...<span style=color:#a6e22e>values</span>){
-  <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>result</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;&#39;</span>;
-  <span style=color:#a6e22e>strings</span>.<span style=color:#a6e22e>forEach</span>(<span style=color:#a6e22e>str</span>, <span style=color:#a6e22e>i</span>{
-    <span style=color:#a6e22e>result</span> <span style=color:#f92672>+=</span> <span style=color:#e6db74>`</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>str</span><span style=color:#e6db74>}${</span><span style=color:#a6e22e>values</span>[<span style=color:#a6e22e>i</span>] <span style=color:#f92672>||</span> <span style=color:#e6db74>&#39;&#39;</span><span style=color:#e6db74>}</span><span style=color:#e6db74>`</span>;
-  })
-}
-
-<span style=color:#75715e>// string untuk mengambil stting
-</span><span style=color:#75715e>// ...values untuk mengambil array exprrssion
-</span><span style=color:#75715e></span>
-<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>str</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>coba</span><span style=color:#e6db74>`hallo nama saya </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>nama</span><span style=color:#e6db74>}</span><span style=color:#e6db74> saya berumur </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>umur</span><span style=color:#e6db74>}</span><span style=color:#e6db74>.`</span>;
-<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>str</span>);
-
-</code></pre></div><p>jika menggunakan high order function</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#75715e>//tagged template
-</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>nama</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;kapet&#39;</span>;
-<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>umur</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>16</span>;
-
-<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>coba</span>(<span style=color:#a6e22e>strings</span>, ...<span style=color:#a6e22e>values</span>){
-  <span style=color:#a6e22e>strings</span>.<span style=color:#a6e22e>reduce</span>((<span style=color:#a6e22e>result</span>, <span style=color:#a6e22e>str</span>, <span style=color:#a6e22e>i</span>) =&gt; <span style=color:#e6db74>`</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>result</span><span style=color:#e6db74>}</span><span style=color:#e6db74> </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>str</span><span style=color:#e6db74>}${</span><span style=color:#a6e22e>values</span>[<span style=color:#a6e22e>i</span>] <span style=color:#f92672>||</span> <span style=color:#e6db74>&#39;&#39;</span><span style=color:#e6db74>}</span><span style=color:#e6db74>`</span>, <span style=color:#e6db74>&#39;&#39;</span>);
-}
-
-<span style=color:#75715e>// string untuk mengambil stting
-</span><span style=color:#75715e>// ...values untuk mengambil array exprrssion
-</span><span style=color:#75715e></span>
-<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>str</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>coba</span><span style=color:#e6db74>`hallo nama saya </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>nama</span><span style=color:#e6db74>}</span><span style=color:#e6db74> saya berumur </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>umur</span><span style=color:#e6db74>}</span><span style=color:#e6db74>.`</span>;
-<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>str</span>);
-
-</code></pre></div></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class="pagination flex-row"><div class="pagination flex-row"><a href=#><i class="fas fa-chevron-left"></i></a><a href=# class=pages>1</a>
+<span>2 Commets</span></div></div><div class=post-title><a href=/5.2.tagged-template-literal/>Tagged Tamplate Literal</a><p></p><button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button></div></div><hr><div class="pagination flex-row"><div class="pagination flex-row"><a href=#><i class="fas fa-chevron-left"></i></a><a href=# class=pages>1</a>
 <a href=# class=pages>2</a>
 <a href=# class=pages>3</a>
 <a href=# class=pages>4</a>
 <a href=# class=pages>5</a>
-<a href=/blogzam/tags/page/5/><i class="fas fa-chevron-right"></i></a></div></div></div><aside class=sidebar><div class=category><h2>Category</h2><ul class=category-list><li class=list-items data-aos=fade-left data-aos-delay=100><a href=#>Software</a>
+<a href=/tags/page/5/><i class="fas fa-chevron-right"></i></a></div></div></div><aside class=sidebar><div class=category><h2>Category</h2><ul class=category-list><li class=list-items data-aos=fade-left data-aos-delay=100><a href=#>Software</a>
 <span>(05)</span></li><li class=list-items data-aos=fade-left data-aos-delay=200><a href=#>Techonlogy</a>
 <span>(02)</span></li><li class=list-items data-aos=fade-left data-aos-delay=300><a href=#>Lifestyle</a>
 <span>(07)</span></li><li class=list-items data-aos=fade-left data-aos-delay=400><a href=#>Shopping</a>
