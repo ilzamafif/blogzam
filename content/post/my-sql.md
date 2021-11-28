@@ -4,6 +4,70 @@ date: 2021-03-01T15:13:46+07:00
 draft: false
 ---
 
+halo teman teman saya ilzam afif di content kali ini kita akan belajar RDBMS MySQL
+
+pertama kita akan bahas cara install mysql langsung aja untuk windows 
+
+...
+
+setelah terinstall kita konfigirasi path
+
+....
+
+untuk memastikan terinstall dengan baik kita cek dengan 
+mysql --version
+
+untuk login ketikkan
+mysql -u root -p
+    
+2. database
+untuk melihat semua database di mysql 
+ show databases;
+ 
+untuk membuat database
+create database nama_databse
+
+memilih database : 
+use nama_database
+
+menghapus database : drop database nama_database
+
+3. tipe data di dalam mysql
+    - number (floating point / int)
+    - decimal
+    - string (char, varchar, text, enum)
+    - boolean
+    - date time
+    - dll.
+    
+ 4. table
+    - melihat storage engines : SHOW ENGINES;
+    - melihat table : SHOW TABLES
+    - melihat struktur table
+        - DESCRIBE nama_table
+        - DESC nama_table
+        - SHOW CREATE TABLE nama_table
+   - null value : default / not null
+   - default value date time : DATETIME_SITESTAME
+   - membuat ulang database : TRUNCATE nama_table
+   - menghapus table : DROP TABLE nama_table
+   - insert data
+       - membuat tabel product : CREATE TABLE nama_table (id, varchar(10) NOT NULL,)
+       - memasukkan data ke table : INSERT INTO nama_table (id) VALUES('01');
+       - select data : SELECT * FROM nama_table
+       - update data : 
+           - menambah field table product : update table product ADD COLUMN nama_field ENUM ("success", "failed") AFTER id;
+           - mengubah 1 field : UPDATE products SET nama_field WHERE id = 01;
+           - mengubah beberapa field : UPDATE products SET name = 'ikan' WHERE id = 01, price = 3000 WHERE id = 01;
+           - mengubah dengan value di field : UPDATE products 
+
+   5. primary key
+       - menambah primary key : ALTER TABLE nama_table ADD PRIMARY KEY (nama_field)
+       
+   6. where clause 
+       - mencari data : SELECT id FROM product WHERE id = 01;
+       
+
 # Pengenalan Database Management System
 - DBMS adalah salah satu aplikasi yang di gunakan untuk me menege data
 - tanpa DBMS untuk memenege data biasanya kita simpan dalam bentuk file(contoh ms.excel)

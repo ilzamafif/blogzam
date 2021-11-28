@@ -22,7 +22,20 @@ Extension chrome yang saya gunakann
 - Application Laucher For Drive
 - Colorzila
 - DevTools AutoSave
-- 
+
+json formater
+colorize
+react developer tools
+redux dev tools
+font ninja
+css peeper
+i dont cere about cookie
+fake filer 
+responsive viewer
+wapplayzer
+web developer
+daily dev
+
 
 Extension vscode untuk html css
 - open in browser & live server

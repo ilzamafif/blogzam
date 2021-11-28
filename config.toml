@@ -1,6 +1,6 @@
 title = "Blogzam"
 
-baseurl = "https://www.ilzamafif.github.io/blogzam"
+baseurl = "/"
 
 MetaDataFormat = "yaml"
 
@@ -19,3 +19,6 @@ googleAnalytics = "UA-171646750-1"
 [Author] 
   name = "Ilzam Afif"
 
+
+[Permalinks]
+    post = "/:filename/"

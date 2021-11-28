@@ -4,6 +4,29 @@ date: 2021-09-24T11:48:18Z
 draft: false
 ---
 
+ membuat container 
+ - melihat daftar container yang berjalan
+   docker container ls
+ - melihat daftar container yang berjalan dan tidak
+   docker container ls --all
+ - membuat container
+   docker container create --name [nama container] 
+   [nama image]:[dan tags]
+-- menjalankan
+   docker container start [nama container]
+-- menghapus 
+ - berhentikan
+   docker container stop [nama container]
+ - menghapus 
+   docker container rm [nama container] 
+   
+-- membuka port untuk container
+ - docker container create --name [nana container] -p [port:port container] [nama image]:[dan tags]
+
+-- menghapus image
+ - docker image rm [nama image]:[dan tags]
+ -
+
 pertaama buat folder contoh `docker-app` 
 lalu buat file disini saya menggunakan go 
 ```go
